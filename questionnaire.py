@@ -105,4 +105,5 @@ score1 = lancer_questionnaire(data_debutant)
 
 score2 = lancer_questionnaire(data_confirme)
 score3 = lancer_questionnaire(data_expert)
-print(f"SCORE FINAL: {score1+score2+score3} ")
+score = len(data_debutant["questions"]) + len(data_confirme["questions"]) + len(data_expert["questions"])
+print(f"SCORE FINAL: {score1+score2+score3} / {score}")
